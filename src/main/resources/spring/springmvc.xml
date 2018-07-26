@@ -11,6 +11,9 @@
 
 	<!-- load properties file -->
 	<context:property-placeholder location="classpath:resource/*.properties"/>
+	
+	<!-- global exception handler -->
+	<bean class="cn.kkl.mall.search.exception.GlobalExceptionResolver"/>
 
 	<context:component-scan base-package="cn.kkl.mall.search.controller" />
 	<mvc:annotation-driven />
